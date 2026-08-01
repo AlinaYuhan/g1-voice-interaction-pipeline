@@ -6,6 +6,13 @@
 说话人上下文、DeepSeek 对话、TTS、机器人音频、灯光和预设动作。浏览器
 Monitor 用于展示实时状态并提供安全的操作控件。
 
+## Monitor UI
+
+![展示运行状态、控制按钮和延迟信息的 G1 Pipeline Monitor](docs/assets/monitor-ui.png)
+
+浏览器 Monitor 将组件就绪状态、会话控制、最近识别与回复、单轮耗时、动作和运行事件
+集中展示在同一个操作界面中。
+
 当前推荐部署链路为：
 
 ```text
@@ -13,11 +20,9 @@ LLM_REPLY_BACKEND=deepseek
 UNITREE_BACKEND=relay
 ```
 
-```text
-G1 外置麦克风 -> SURF 语音运行时 -> ROS 2 /audio_msg
--> 上下文节点 -> 本地 LLM HTTP 服务 -> DeepSeek API
--> Edge TTS -> Jetson 中继 -> G1 音频 / 灯光 / 动作
-```
+## 架构概览
+
+![G1 语音交互 Pipeline 架构](docs/assets/architecture-overview.png)
 
 XJTLU RAG 源码和小型数据库仍保留在仓库中，但默认不启用。原因是它在目标演示中
 增加了较明显的延迟，且效果收益不足。

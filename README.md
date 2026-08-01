@@ -7,6 +7,14 @@ wake-word detection, VAD, ASR, speaker context, direct DeepSeek replies, TTS,
 robot audio, lights, and predefined actions. A browser Monitor provides runtime
 status and safe operator controls.
 
+## Monitor UI
+
+![G1 Pipeline Monitor showing runtime status, controls, and latency](docs/assets/monitor-ui.png)
+
+The browser Monitor brings component readiness, conversation controls, recent
+recognition and replies, per-turn latency, actions, and runtime events into one
+operator view.
+
 The current recommended deployment is:
 
 ```text
@@ -14,11 +22,9 @@ LLM_REPLY_BACKEND=deepseek
 UNITREE_BACKEND=relay
 ```
 
-```text
-G1 external microphone -> SURF voice runtime -> ROS 2 /audio_msg
--> context node -> local LLM HTTP service -> DeepSeek API
--> Edge TTS -> Jetson relay -> G1 audio / lights / actions
-```
+## Architecture overview
+
+![G1 voice interaction pipeline architecture](docs/assets/architecture-overview.png)
 
 The XJTLU RAG implementation and its small databases remain in the repository
 for optional experiments. RAG is disabled by default because it added latency
