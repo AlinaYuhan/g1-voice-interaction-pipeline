@@ -7,14 +7,6 @@ wake-word detection, VAD, ASR, speaker context, direct DeepSeek replies, TTS,
 robot audio, lights, and predefined actions. A browser Monitor provides runtime
 status and safe operator controls.
 
-## Monitor UI
-
-![G1 Pipeline Monitor showing runtime status, controls, and latency](docs/assets/monitor-ui.png)
-
-The browser Monitor brings component readiness, conversation controls, recent
-recognition and replies, per-turn latency, actions, and runtime events into one
-operator view.
-
 The current recommended deployment is:
 
 ```text
@@ -91,6 +83,8 @@ example, [http://127.0.0.1:8766/](http://127.0.0.1:8766/).
 The Monitor shows pipeline, session, connection, and component readiness plus
 the latest ASR, reply, action, per-turn latency, and event stream. Its controls
 are:
+
+![G1 Pipeline Monitor showing runtime status, controls, and latency](docs/assets/monitor-ui.png)
 
 | Group | Control | Behavior |
 | --- | --- | --- |

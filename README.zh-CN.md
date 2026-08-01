@@ -6,13 +6,6 @@
 说话人上下文、DeepSeek 对话、TTS、机器人音频、灯光和预设动作。浏览器
 Monitor 用于展示实时状态并提供安全的操作控件。
 
-## Monitor UI
-
-![展示运行状态、控制按钮和延迟信息的 G1 Pipeline Monitor](docs/assets/monitor-ui.png)
-
-浏览器 Monitor 将组件就绪状态、会话控制、最近识别与回复、单轮耗时、动作和运行事件
-集中展示在同一个操作界面中。
-
 当前推荐部署链路为：
 
 ```text
@@ -84,6 +77,8 @@ cp config/local.env.example config/local.env
 
 Monitor 会展示 Pipeline、Session、连接与组件就绪状态，以及最新 ASR、回复、
 动作、每轮延迟和实时事件。控件语义如下：
+
+![展示运行状态、控制按钮和延迟信息的 G1 Pipeline Monitor](docs/assets/monitor-ui.png)
 
 | 分组 | 控件 | 效果 |
 | --- | --- | --- |
