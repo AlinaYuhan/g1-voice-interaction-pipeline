@@ -2,6 +2,8 @@
 
 [中文](README.zh-CN.md) | [English](README.md)
 
+> **[西交利物浦大学](https://www.xjtlu.edu.cn/zh/)（XJTLU）具身智能实验室**项目。
+
 这是一套面向 Unitree G1 机器人的集成语音交互系统，包含唤醒词、VAD、ASR、
 说话人上下文、DeepSeek 对话、TTS、机器人音频、灯光和预设动作。浏览器
 Monitor 用于展示实时状态并提供安全的操作控件。

@@ -2,6 +2,9 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+> A project of the **XJTLU Embodied Intelligence Lab** at
+> [Xi'an Jiaotong-Liverpool University](https://www.xjtlu.edu.cn/en/).
+
 An integrated voice interaction stack for the Unitree G1 robot. It combines
 wake-word detection, VAD, ASR, speaker context, direct DeepSeek replies, TTS,
 robot audio, lights, and predefined actions. A browser Monitor provides runtime
